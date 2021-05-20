@@ -15,9 +15,52 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queries", "Queries", "{F160
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{844EF85B-F14D-48D5-8363-09114009928B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Infrastructure.Cqrs", "Infrastructure\EmergingBooking.Infrastructure.Cqrs\EmergingBooking.Infrastructure.Cqrs.csproj", "{9FF2A9AD-0CFB-4656-A46F-E59F1680245E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Infrastructure.KafkaConsumer", "Infrastructure\EmergingBooking.Infrastructure.KafkaConsumer\EmergingBooking.Infrastructure.KafkaConsumer.csproj", "{E76B1830-0BC0-476F-9D28-25071D43E22A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Infrastructure.KafkaProducer", "Infrastructure\EmergingBooking.Infrastructure.KafkaProducer\EmergingBooking.Infrastructure.KafkaProducer.csproj", "{782873CA-2071-4464-A7A4-BF3B2F3B26E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Infrastructure.Storage.RavenDB", "Infrastructure\EmergingBooking.Infrastructure.Storage.RavenDB\EmergingBooking.Infrastructure.Storage.RavenDB.csproj", "{A3008A29-F1CE-4331-A8FE-71C0CC1F3F3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Infrastructure.Storage.SqlServer", "Infrastructure\EmergingBooking.Infrastructure.Storage.SqlServer\EmergingBooking.Infrastructure.Storage.SqlServer.csproj", "{C65D4778-D661-46B7-B614-3AC5BA54D232}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FF2A9AD-0CFB-4656-A46F-E59F1680245E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FF2A9AD-0CFB-4656-A46F-E59F1680245E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FF2A9AD-0CFB-4656-A46F-E59F1680245E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FF2A9AD-0CFB-4656-A46F-E59F1680245E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E76B1830-0BC0-476F-9D28-25071D43E22A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E76B1830-0BC0-476F-9D28-25071D43E22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E76B1830-0BC0-476F-9D28-25071D43E22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E76B1830-0BC0-476F-9D28-25071D43E22A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{782873CA-2071-4464-A7A4-BF3B2F3B26E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782873CA-2071-4464-A7A4-BF3B2F3B26E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782873CA-2071-4464-A7A4-BF3B2F3B26E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782873CA-2071-4464-A7A4-BF3B2F3B26E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3008A29-F1CE-4331-A8FE-71C0CC1F3F3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3008A29-F1CE-4331-A8FE-71C0CC1F3F3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3008A29-F1CE-4331-A8FE-71C0CC1F3F3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3008A29-F1CE-4331-A8FE-71C0CC1F3F3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65D4778-D661-46B7-B614-3AC5BA54D232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65D4778-D661-46B7-B614-3AC5BA54D232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65D4778-D661-46B7-B614-3AC5BA54D232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65D4778-D661-46B7-B614-3AC5BA54D232}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9FF2A9AD-0CFB-4656-A46F-E59F1680245E} = {4B84E078-81FB-423B-B4BB-0907EF18CF5E}
+		{E76B1830-0BC0-476F-9D28-25071D43E22A} = {4B84E078-81FB-423B-B4BB-0907EF18CF5E}
+		{782873CA-2071-4464-A7A4-BF3B2F3B26E1} = {4B84E078-81FB-423B-B4BB-0907EF18CF5E}
+		{A3008A29-F1CE-4331-A8FE-71C0CC1F3F3E} = {4B84E078-81FB-423B-B4BB-0907EF18CF5E}
+		{C65D4778-D661-46B7-B614-3AC5BA54D232} = {4B84E078-81FB-423B-B4BB-0907EF18CF5E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1643C63E-3514-4569-819C-DF5F584AC1F1}
