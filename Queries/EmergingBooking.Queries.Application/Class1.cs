@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EmergingBooking.Infrastructure.Cqrs
+namespace EmergingBooking.Queries.Application
 {
     public class Class1
     {

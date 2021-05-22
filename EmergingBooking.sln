@@ -15,15 +15,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Queries", "Queries", "{F160
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebUI", "WebUI", "{844EF85B-F14D-48D5-8363-09114009928B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Infrastructure.Cqrs", "Infrastructure\EmergingBooking.Infrastructure.Cqrs\EmergingBooking.Infrastructure.Cqrs.csproj", "{9FF2A9AD-0CFB-4656-A46F-E59F1680245E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmergingBooking.Infrastructure.Cqrs", "Infrastructure\EmergingBooking.Infrastructure.Cqrs\EmergingBooking.Infrastructure.Cqrs.csproj", "{9FF2A9AD-0CFB-4656-A46F-E59F1680245E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Infrastructure.KafkaConsumer", "Infrastructure\EmergingBooking.Infrastructure.KafkaConsumer\EmergingBooking.Infrastructure.KafkaConsumer.csproj", "{E76B1830-0BC0-476F-9D28-25071D43E22A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmergingBooking.Infrastructure.KafkaConsumer", "Infrastructure\EmergingBooking.Infrastructure.KafkaConsumer\EmergingBooking.Infrastructure.KafkaConsumer.csproj", "{E76B1830-0BC0-476F-9D28-25071D43E22A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Infrastructure.KafkaProducer", "Infrastructure\EmergingBooking.Infrastructure.KafkaProducer\EmergingBooking.Infrastructure.KafkaProducer.csproj", "{782873CA-2071-4464-A7A4-BF3B2F3B26E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmergingBooking.Infrastructure.KafkaProducer", "Infrastructure\EmergingBooking.Infrastructure.KafkaProducer\EmergingBooking.Infrastructure.KafkaProducer.csproj", "{782873CA-2071-4464-A7A4-BF3B2F3B26E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Infrastructure.Storage.RavenDB", "Infrastructure\EmergingBooking.Infrastructure.Storage.RavenDB\EmergingBooking.Infrastructure.Storage.RavenDB.csproj", "{A3008A29-F1CE-4331-A8FE-71C0CC1F3F3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmergingBooking.Infrastructure.Storage.RavenDB", "Infrastructure\EmergingBooking.Infrastructure.Storage.RavenDB\EmergingBooking.Infrastructure.Storage.RavenDB.csproj", "{A3008A29-F1CE-4331-A8FE-71C0CC1F3F3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Infrastructure.Storage.SqlServer", "Infrastructure\EmergingBooking.Infrastructure.Storage.SqlServer\EmergingBooking.Infrastructure.Storage.SqlServer.csproj", "{C65D4778-D661-46B7-B614-3AC5BA54D232}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmergingBooking.Infrastructure.Storage.SqlServer", "Infrastructure\EmergingBooking.Infrastructure.Storage.SqlServer\EmergingBooking.Infrastructure.Storage.SqlServer.csproj", "{C65D4778-D661-46B7-B614-3AC5BA54D232}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Management.Application", "Business\EmergingBooking.Management.Application\EmergingBooking.Management.Application.csproj", "{F2DAF53A-6681-4D70-B16D-16B498C6E635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Reservation.Application", "Business\EmergingBooking.Reservation.Application\EmergingBooking.Reservation.Application.csproj", "{8C82E77D-7773-4D9F-80D2-0C7CFBD0ACCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Queries.Application", "Queries\EmergingBooking.Queries.Application\EmergingBooking.Queries.Application.csproj", "{5FFFAE98-EB63-4C8B-A573-F72F9FBAB9FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.ApiWrite", "Api\Write\EmergingBooking.ApiWrite\EmergingBooking.ApiWrite.csproj", "{09C9A57E-1B46-472B-B3EC-148C05ACC847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.ApiRead", "Api\Read\EmergingBooking.ApiRead\EmergingBooking.ApiRead.csproj", "{7298A44F-4732-400B-A68E-260F373894E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmergingBooking.Message.Consumer", "BackgroundService\EmergingBooking.Message.Consumer\EmergingBooking.Message.Consumer.csproj", "{F1ADE62F-83B7-454C-A039-9BDE572FE6DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +63,30 @@ Global
 		{C65D4778-D661-46B7-B614-3AC5BA54D232}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C65D4778-D661-46B7-B614-3AC5BA54D232}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C65D4778-D661-46B7-B614-3AC5BA54D232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DAF53A-6681-4D70-B16D-16B498C6E635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DAF53A-6681-4D70-B16D-16B498C6E635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DAF53A-6681-4D70-B16D-16B498C6E635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DAF53A-6681-4D70-B16D-16B498C6E635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C82E77D-7773-4D9F-80D2-0C7CFBD0ACCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C82E77D-7773-4D9F-80D2-0C7CFBD0ACCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C82E77D-7773-4D9F-80D2-0C7CFBD0ACCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C82E77D-7773-4D9F-80D2-0C7CFBD0ACCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFFAE98-EB63-4C8B-A573-F72F9FBAB9FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFFAE98-EB63-4C8B-A573-F72F9FBAB9FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFFAE98-EB63-4C8B-A573-F72F9FBAB9FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFFAE98-EB63-4C8B-A573-F72F9FBAB9FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C9A57E-1B46-472B-B3EC-148C05ACC847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C9A57E-1B46-472B-B3EC-148C05ACC847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C9A57E-1B46-472B-B3EC-148C05ACC847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C9A57E-1B46-472B-B3EC-148C05ACC847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7298A44F-4732-400B-A68E-260F373894E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7298A44F-4732-400B-A68E-260F373894E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7298A44F-4732-400B-A68E-260F373894E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7298A44F-4732-400B-A68E-260F373894E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1ADE62F-83B7-454C-A039-9BDE572FE6DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1ADE62F-83B7-454C-A039-9BDE572FE6DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1ADE62F-83B7-454C-A039-9BDE572FE6DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1ADE62F-83B7-454C-A039-9BDE572FE6DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +97,12 @@ Global
 		{782873CA-2071-4464-A7A4-BF3B2F3B26E1} = {4B84E078-81FB-423B-B4BB-0907EF18CF5E}
 		{A3008A29-F1CE-4331-A8FE-71C0CC1F3F3E} = {4B84E078-81FB-423B-B4BB-0907EF18CF5E}
 		{C65D4778-D661-46B7-B614-3AC5BA54D232} = {4B84E078-81FB-423B-B4BB-0907EF18CF5E}
+		{F2DAF53A-6681-4D70-B16D-16B498C6E635} = {02BA2D9A-BD58-44C5-927B-436E6397D062}
+		{8C82E77D-7773-4D9F-80D2-0C7CFBD0ACCB} = {02BA2D9A-BD58-44C5-927B-436E6397D062}
+		{5FFFAE98-EB63-4C8B-A573-F72F9FBAB9FC} = {F16051D6-5924-49CC-979D-55A1FFA153CE}
+		{09C9A57E-1B46-472B-B3EC-148C05ACC847} = {6F38E388-A672-4229-AF28-C507F7C1AA0C}
+		{7298A44F-4732-400B-A68E-260F373894E1} = {6F38E388-A672-4229-AF28-C507F7C1AA0C}
+		{F1ADE62F-83B7-454C-A039-9BDE572FE6DE} = {4A7603F7-07A3-4157-8541-563DC31E859D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1643C63E-3514-4569-819C-DF5F584AC1F1}
